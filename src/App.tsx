@@ -1,10 +1,14 @@
 import "./App.css";
-import Home from "./components/Home";
+import Footer from "./components/Footer/Footer";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
     <div>
-      <Home />
+      <main>
+        <Home />
+      </main>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,41 @@
+/* index.css */
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Takes full height of the browser */
+}
+/* Add this to index.css to be 100% safe */
+html,
+body {
+  height: 100%;
+  direction: rtl;
+}
+
+/* This targets the main tag inside your App/Home */
+main {
+  flex: 1; /* This is the magic line that pushes the footer down */
+}
+
+/* 1. Standard Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+/* 2. Global Styles */
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #242424;
+  color: #5800a0;
+  overflow-x: hidden; /* Prevents annoying side-scrolling on mobile */
+  -webkit-font-smoothing: antialiased; /* Makes fonts look sharper */
+}
+
+/* 3. Link/Text Defaults */
+a {
+  text-decoration: none;
+  color: inherit;
+}
