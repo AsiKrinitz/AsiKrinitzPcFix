@@ -562,7 +562,7 @@
 .contact-name {
   font-size: 2rem; /* שם ומספר בולטים מאוד */
   font-weight: 800;
-  display: block;
+
   margin-bottom: 10px;
 }
 
@@ -672,4 +672,101 @@
     max-width: 280px;
     height: 280px;
   }
+}
+
+/* סידור השם והמספר */
+.contact-name-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* מאפשר ירידת שורה בנייד */
+  justify-content: center; /* ממרכז את שניהם */
+  gap: 10px; /* רווח קבוע ביניהם */
+  margin-bottom: 10px;
+}
+
+.contact-name,
+.contact-number {
+  font-size: 2.2rem; /* גודל ברירת מחדל למסך גדול */
+  color: #bb86fc;
+  font-weight: 800;
+  text-shadow: 0 0 10px rgba(187, 134, 252, 0.3);
+  white-space: nowrap; /* מונע מהמספר עצמו להישבר באמצע */
+}
+
+/* תיקון ספציפי למסכים קטנים (פלאפון) */
+/* --- ריכוז תיקוני מובייל --- */
+
+@media (max-width: 900px) {
+  /* סידור כרטיס יצירת הקשר */
+  .contact-card-with-photo {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .contact-name-wrapper {
+    justify-content: center;
+  }
+
+  /* סידור כרטיס אודות והקוד */
+  .about-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-visual {
+    order: -1; /* הקוד מופיע ראשון מעל הטקסט */
+    padding: 40px;
+    width: 100%;
+  }
+
+  .code-window {
+    width: 160px;
+    height: 150px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  /* השם והמספר אחד מתחת לשני */
+  .contact-name-wrapper {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .contact-name,
+  .contact-number {
+    font-size: 1.7rem;
+  }
+
+  /* כותרת אודות */
+  .about-header h2 {
+    font-size: 1.8rem;
+    border-right: none;
+    border-bottom: 3px solid #5800a0;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  /* הקטנה נוספת של ריבוע הקוד לטלפונים קטנים */
+  .code-window {
+    width: 130px;
+    height: 120px;
+  }
+
+  .code-icon {
+    font-size: 2.2rem;
+  }
+
+  .about-tags {
+    justify-content: center;
+  }
+}
+
+.contact-name,
+.contact-number {
+  font-size: 1.8rem; /* קצת יותר קטן כדי שיכנס במסך */
+}
+
+.contact-card-info h2 {
+  font-size: 2rem; /* כותרת "זמין עבורכם" קצת יותר קטנה */
 }

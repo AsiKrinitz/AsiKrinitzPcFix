@@ -38,7 +38,10 @@ export default function Home() {
             <div className="contact-card-info">
               <h2>זמין עבורכם עכשיו</h2>
               <div className="contact-details">
-                <span className="contact-name">אסי - 052-7458800</span>
+                <div className="contact-name-wrapper">
+                  <span className="contact-name">אסי</span>
+                  <span className="contact-number">052-7458800</span>
+                </div>
                 <div className="hero-badge">מתכנת וטכנאי מחשבים מוסמך 📜</div>
               </div>
 
@@ -91,11 +94,7 @@ export default function Home() {
           </div>
           <div className="about-visual">
             <div className="code-window">
-              <div className="window-dots">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
+              <div className="window-dots"></div>
               <div className="code-icon">{"</>"}</div>
             </div>
           </div>
@@ -127,11 +126,12 @@ export default function Home() {
       <section className="services-section">
         <h3>השירותים שלי:</h3>
         <ul className="services-list">
-          <li>תיקון מחשבים ניידים ונייחים</li>
-          <li>התקנת מערכות הפעלה (Windows)</li>
-          <li>ניקוי וירוסים ותוכנות זדוניות</li>
-          <li>שדרוג חומרה (SSD, RAM)</li>
-          <li>שירות תמיכה מרחוק</li>
+          <li>💻 תיקון מחשבים ניידים ונייחים</li>
+          <li>💽 התקנת מערכת הפעלה (Windows)</li>
+          <li>🛡️ ניקוי וירוסים ותוכנות זדוניות</li>
+          <li>🚀 שדרוג חומרה (SSD, RAM, CPU, GPU)</li>
+          <li>🔍 שירות תמיכה מרחוק</li>
+          <li>📶 פתרון בעיות קליטה והגדרת ציוד תקשורת</li>
         </ul>
       </section>
     </div>
