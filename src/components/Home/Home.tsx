@@ -43,6 +43,7 @@ export default function Home() {
                   <span className="contact-number">052-7458800</span>
                 </div>
                 <div className="hero-badge">מתכנת וטכנאי מחשבים מוסמך 📜</div>
+                <p className="trust-sentence">✅ לא תיקנתי - לא שילמת!</p>
               </div>
 
               <a
@@ -53,6 +54,14 @@ export default function Home() {
               >
                 <span className="whatsapp-icon">💬</span>
                 שלחו הודעה בוואטסאפ
+              </a>
+
+              <br></br>
+              <br></br>
+
+              <a href="tel:0527458800" className="call-btn">
+                <span className="call-icon">📞</span>
+                התקשרו עכשיו
               </a>
             </div>
 

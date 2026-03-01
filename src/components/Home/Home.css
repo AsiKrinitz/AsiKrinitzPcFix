@@ -26,7 +26,7 @@
 /* 3. Hero Section */
 .hero {
   text-align: center;
-  padding: 60px 20px;
+  padding: 10px 20px;
   background: radial-gradient(
     circle at center,
     rgba(88, 0, 160, 0.15) 0%,
@@ -769,4 +769,53 @@
 
 .contact-card-info h2 {
   font-size: 2rem; /* כותרת "זמין עבורכם" קצת יותר קטנה */
+}
+
+/* משפט האמון */
+.trust-sentence {
+  color: #25d366; /* ירוק שמסמל ביטחון */
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin: 10px 0 20px 0;
+  text-shadow: 0 0 10px rgba(37, 211, 102, 0.2);
+}
+
+/* מיכל הכפתורים */
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* כפתור חיוג */
+.call-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #bb86fc 0%, #5800a0 100%);
+  color: white;
+  padding: 16px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(187, 134, 252, 0.2);
+}
+
+.call-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(187, 134, 252, 0.4);
+}
+
+/* התאמה למובייל - שהכפתורים יהיו אחד ליד השני או אחד מעל השני בצורה יפה */
+@media (max-width: 600px) {
+  .contact-actions {
+    width: 100%;
+  }
+
+  .trust-sentence {
+    font-size: 1.1rem;
+  }
 }
