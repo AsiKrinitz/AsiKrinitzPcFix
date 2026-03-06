@@ -3,7 +3,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer className="footer">
-      <h2 id="rights">♥♥ כל הזכויות שמורות לאסי קריניץ ♥♥</h2>
+      <h2 id="rights">כל הזכויות שמורות לאסי קריניץ</h2>
 
       <ul className="social-links">
         <li>
@@ -13,10 +13,7 @@ function Footer() {
             rel="noopener noreferrer"
           >
             פייסבוק&nbsp;
-            <img
-              alt="Facebook icon"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/1024px-F_icon.svg.png"
-            />
+            <img alt="Facebook icon" src="Facebook_logo.png" />
           </a>
         </li>
 
@@ -27,10 +24,7 @@ function Footer() {
             rel="noopener noreferrer"
           >
             אינסטגרם&nbsp;
-            <img
-              alt="Instagram icon"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/769px-Instagram-Icon.png"
-            />
+            <img alt="Instagram icon" src="Instagram_logo.png" />
           </a>
         </li>
 
@@ -41,10 +35,7 @@ function Footer() {
             rel="noopener noreferrer"
           >
             לינקדאין&nbsp;
-            <img
-              alt="LinkedIn icon"
-              src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
-            />
+            <img alt="LinkedIn icon" src="Linkedin_logo.png" />
           </a>
         </li>
       </ul>
