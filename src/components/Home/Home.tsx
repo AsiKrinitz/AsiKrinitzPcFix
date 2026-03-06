@@ -4,144 +4,174 @@ import AsiImage2 from "../../assets/Asi17.jpeg";
 export default function Home() {
   return (
     <div className="home-container">
-      {/* 1. Header */}
+      {/* SEO Heading for overall page focus */}
+      <h1 className="sr-only">
+        טכנאי מחשבים בחיפה והקריות - אסי קריניץ, שירות עד הבית
+      </h1>
+
       <header className="main-header">
         <nav>
           <strong className="logo-text">אסי קריניץ - טכנאי מחשבים</strong>
         </nav>
       </header>
 
-      {/* 2. Hero Section */}
-      <main className="hero">
-        <div className="hero-content">
-          <h1>המחשב עושה בעיות?</h1>
-          <p className="hero-description">
-            אבחון וטיפול בכל סוגי התקלות: חומרה, תוכנה, מערכות הפעלה וציוד
-            היקפי.
-            <span className="location-highlight">
-              שירות מקצועי והגעה עד בית הלקוח.
-            </span>
-          </p>
+      <section className="hero">
+        <div className="hero-content-wrapper">
+          <div className="hero-text">
+            <h2 className="main-heading">
+              המחשב עושה בעיות? <br />
+              <span className="highlight">אני פה כדי לתקן.</span>
+            </h2>
+            <p className="hero-description">
+              אבחון וטיפול מקצועי בכל סוגי התקלות: חומרה, תוכנה, מערכות הפעלה וציוד היקפי.
+              <strong> שירות עד הבית בחיפה, הקריות והסביבה.</strong>
+            </p>
 
-          <div className="service-areas">
-            <span className="location-icon">📍</span>
-            <strong>אזורי שירות:</strong> חיפה, הקריות והסביבה
-          </div>
+            <div className="trust-badges">
+              <span className="badge">✅ לא תיקנתי - לא שילמת</span>
+              <span className="badge">📍 הגעה עד בית הלקוח</span>
+              <span className="badge">💰 החל מ-100₪ לביקור</span>
+            </div>
 
-          <div className="price-highlight">
-            <p>מחירים נוחים במיוחד ללקוחות חדשים</p>
-            <span className="price-tag">החל מ-100₪ לביקור!</span>
-          </div>
-
-          {/* כרטיס יצירת קשר משולב */}
-          <div className="cta-card contact-card-with-photo">
-            <div className="contact-card-info">
-              <h2>זמין עבורכם עכשיו</h2>
-              <div className="contact-details">
-                <div className="contact-name-wrapper">
-                  <span className="contact-name">אסי</span>
-                  <span className="contact-number">052-7458800</span>
-                </div>
-                <div className="hero-badge">מתכנת וטכנאי מחשבים מוסמך 📜</div>
-                <p className="trust-sentence">✅ לא תיקנתי - לא שילמת!</p>
-              </div>
-
+            <div className="cta-group">
               <a
                 href="https://wa.me/972527458800?text=היי אסי, אשמח לעזרה עם המחשב שלי"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="whatsapp-btn"
+                className="btn btn-primary pulse-btn"
               >
-                <span className="whatsapp-icon">💬</span>
-                שלחו הודעה בוואטסאפ
+                <span className="icon">💬</span> שלחו הודעה בוואטסאפ
               </a>
-
-              <br></br>
-              <br></br>
-
-              <a href="tel:0527458800" className="call-btn">
-                <span className="call-icon">📞</span>
-                התקשרו עכשיו
+              <a href="tel:0527458800" className="btn btn-secondary">
+                <span className="icon">📞</span> התקשרו: 052-7458800
               </a>
             </div>
-
-            <div className="contact-card-photo-wrapper">
-              <img src={AsiImage2} alt="אסי קריניץ" className="contact-photo" />
-            </div>
           </div>
-        </div>
-      </main>
 
-      {/* 3. About Me */}
-      <section className="about-me">
-        <div className="about-card">
-          <div className="about-content">
-            <div className="about-header">
-              <h2>קצת עליי</h2>
-            </div>
-            <div className="about-description">
-              <p className="highlight-p">
-                מתכנת עם ניסיון של <strong>מעל 3 שנים</strong> וטכנאי מחשבים
-                מוסמך.
-              </p>
-              <p>
-                השילוב בין עולם הקוד לחומרה מאפשר לי לאבחן תקלות לעומק ולהבין
-                איך המערכת "חושבת" באמת.
-              </p>
-            </div>
-            <div className="about-tags">
-              <div className="tag">
-                <span>💻</span> מתכנת 3+ שנים
-              </div>
-              <div className="tag">
-                <span>📜</span> טכנאי מוסמך
-              </div>
-              <div className="tag">
-                <span>🔍</span> אבחון ברמת הקוד
+          <div className="hero-visual">
+            <div className="photo-container">
+              <div className="photo-glow"></div>
+              <img
+                src={AsiImage2}
+                alt="אסי קריניץ טכנאי מחשבים מומלץ"
+                className="profile-img"
+              />
+              <div className="floating-badge">
+                <span className="badge-text">מתכנת וטכנאי מוסמך 📜</span>
               </div>
             </div>
-          </div>
-          <div className="about-visual">
-            <div className="code-window">
-              <div className="window-dots"></div>
-              <div className="code-icon">{"</>"}</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 4. Remote Support & Services */}
-      <section className="remote-support">
-        <div className="remote-card">
-          <div className="remote-icon">🖱️</div>
-          <div className="remote-content">
-            <h3>תמיכה מרחוק בלחיצת כפתור</h3>
-            <p>
-              ניתן לפתור תקלות תוכנה וניקוי וירוסים מרחוק באמצעות AnyDesk או
-              TeamViewer.
-            </p>
-            <a
-              href="https://150.co.il/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="download-btn"
-            >
-              להורדת תוכנת שליטה
-            </a>
           </div>
         </div>
       </section>
 
       <section className="services-section">
-        <h3>השירותים שלי:</h3>
-        <ul className="services-list">
-          <li>💻 תיקון מחשבים ניידים ונייחים</li>
-          <li>💽 התקנת מערכת הפעלה (Windows)</li>
-          <li>🛡️ ניקוי וירוסים ותוכנות זדוניות</li>
-          <li>🚀 שדרוג חומרה (SSD, RAM, CPU, GPU)</li>
-          <li>🔍 שירות תמיכה מרחוק</li>
-          <li>📶 פתרון בעיות קליטה והגדרת ציוד תקשורת</li>
-        </ul>
+        <div className="section-header">
+          <h2>השירותים שלי</h2>
+          <p>פתרון מקיף לכל בעיה טכנולוגית, עם דגש על איכות ואמינות.</p>
+        </div>
+
+        <div className="services-grid">
+          <div className="service-card">
+            <div className="service-icon">💻</div>
+            <h3>תיקון מחשבים ניידים ונייחים</h3>
+            <p>החלפת מסכים, תיקון לוחות אם, פתרון בעיות התחממות ורעש.</p>
+          </div>
+          <div className="service-card">
+            <div className="service-icon">🚀</div>
+            <h3>שדרוג חומרה וביצועים</h3>
+            <p>
+              השבת חיים למחשב איטי ע"י שדרוג לכונן SSD והוספת זיכרון RAM.
+            </p>
+          </div>
+          <div className="service-card">
+            <div className="service-icon">🛡️</div>
+            <h3>ניקוי וירוסים ואבטחה</h3>
+            <p>הסרת תוכנות כופר, רוגלות, וירוסים והתקנת מערכות הגנה חזקות.</p>
+          </div>
+          <div className="service-card">
+            <div className="service-icon">💽</div>
+            <h3>התקנת מערכות הפעלה</h3>
+            <p>
+              התקנה ושדרוג ל-Windows 10/11 כולל גיבוי נתונים מלא לפני הפירמוט.
+            </p>
+          </div>
+          <div className="service-card">
+            <div className="service-icon">📶</div>
+            <h3>רשתות ותקשורת</h3>
+            <p>פתרון בעיות קליטת Wi-Fi בבית, הגדרת ראוטרים ומגדילי טווח.</p>
+          </div>
+          <div className="service-card">
+            <div className="service-icon">🖱️</div>
+            <h3>הדרכות ותמיכה מרחוק</h3>
+            <p>
+              הדרכה אישית על תוכנות ותמיכה מהירה מרחוק ללא המתנה להגעת טכנאי.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="about-section">
+        <div className="about-wrapper">
+          <div className="about-text">
+            <h2>מי אני?</h2>
+            <p className="lead">טכנאי מחשבים ומתכנת עם פאשן לטכנולוגיה.</p>
+            <p>
+              עם מעל 3 שנות ניסיון בפיתוח תוכנה והסמכה מקצועית כטכנאי PC, אני מביא איתי ראייה מרחבית על האופן בו המחשב עובד. זה מאפשר לי לאתר את מקור התקלה במהירות, בין אם היא בחומרה או בקוד, ולספק פתרון יציב לאורך זמן.
+            </p>
+            <ul className="about-features">
+              <li>✔️ אבחון מדויק ברמת הקוד והחומרה</li>
+              <li>✔️ שירות אמין ושקיפות מלאה מול הלקוח</li>
+              <li>✔️ זמינות גמישה לאזור חיפה, הקריות וסביבתן</li>
+            </ul>
+          </div>
+
+          <div className="about-illustration">
+            <div className="code-editor-mockup">
+              <div className="mockup-header">
+                <span className="dot red"></span>
+                <span className="dot yellow"></span>
+                <span className="dot green"></span>
+              </div>
+              <div className="mockup-body">
+                <pre>
+                  <code>
+                    <span className="keyword">const</span>{" "}
+                    <span className="variable">technician</span> = {"{"} <br />
+                    &nbsp;&nbsp;name: <span className="string">"Asi Krinitz"</span>,<br />
+                    &nbsp;&nbsp;skills: [<span className="string">"PC Repair"</span>, <span className="string">"Coding"</span>, <span className="string">"Diagnostics"</span>],<br />
+                    &nbsp;&nbsp;serviceArea: [<span className="string">"Haifa"</span>, <span className="string">"Krayot"</span>],<br />
+                    &nbsp;&nbsp;promise: <span className="string">"100% Satisfaction or Free!"</span>
+                    <br />
+                    {"};"}
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="remote-support-banner">
+        <div className="banner-content">
+          <div className="banner-icon">🌐</div>
+          <div className="banner-text">
+            <h2>צריכים עזרה דחופה? תמיכה מרחוק!</h2>
+            <p>
+              פתרון מהיר לתקלות תוכנה והגדרות ללא המתנה, היישר מהמחשב שלי לשלכם
+              דרך AnyDesk, כנסו לקישור והורידו את התוכנה.
+            </p>
+          </div>
+          <div className="banner-action">
+            <a
+              href="https://150.co.il/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline"
+            >
+              להורדת תוכנת שליטה (150)
+            </a>
+          </div>
+        </div>
       </section>
     </div>
   );
